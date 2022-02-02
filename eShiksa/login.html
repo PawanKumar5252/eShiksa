@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"href="login.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+           
+           function login(){
+            // alert("hau");
+             var u_name=document.getElementById("user_name").value; 
+              var u_pass=document.getElementById("password").value; 
+             var  below_text=document.getElementById("below_text").value; 
+              if(u_name ==''){
+                document.getElementById("p_uname").style.display = "block";
+                document.getElementById('lab_div').innerHTML=lab_div.setAttribute("bodrer-color:red");
+                 
+               }
+              if(u_pass ==''){
+                document.getElementById("p_pass").style.display = "block";
+              }
+              if(below_text ==''){
+                document.getElementById("p_capcha").style.display = "block";
+              }
+           }
+
+           function reset_password(){
+            var  u_name=document.getElementById("user_name2").value;
+            var  below_text=document.getElementById("below_text2").value; 
+                if(u_name ==''){
+                  alert("Enter Username");
+                }
+                if(below_text ==''){
+                   alert("Captcha is required") ;
+                }
+           }
+
+
+        function show(){
+             document.getElementById("login").style.display="none";     
+      if (style = "display:none") {
+        document.getElementById("forget_password").style.display = "block";
+      }
+        }
+      function show_again(){
+        // location.reload();
+        document.getElementById("forget_password").style.display="none";
+        
+             if (style = "display:none") {
+               document.getElementById("login").style.display = "block";
+             }
+      }   
+    </script>
+  </head>
+<body>
+    <div class="slide_bar">
+       <img src="img/back.png">
+    <!-- </div> -->
+    <div  id="login"class="login" data-aos="fade-left">
+        <div class="head_img_div">
+            <img src="img/Logo.png">
+        </div>
+        <div class="input_div">
+            <div class="img_div"><img src="img/logo2.png"></div>
+            <div class="span_div"><span><b>Login</b> to continue</span></div>
+        </div>
+        <div class="lab_div" id="lab_div">
+            <div class="img_div_2_user"><img src="img/user3.png"></div><input id="user_name"  type="text" placeholder="Username or Email">
+        </div>
+        <p id="p_uname" style="color: red;display:none;">Please enter your Username</p>
+        <div class="lab_div" id="lab_div">
+            <div class="img_div_2"></div><img src="img/lock--v1.png"><input id="password" type="password" placeholder="Password"></div>
+            <p id="p_pass" style="color: red;display:none;">Please provide your password</p>
+        <div class="lab_div" id="lab_div">
+            <div class="img_div_2"></div><img src="img/below.png"><input id="below_text" type="text" placeholder="Enter below text"></div>
+            <p id="p_capcha" style="color: red;display:none;">Please enter captcha</p>
+        <div class="lab_div">
+            <div class="img_div_2"></div><img src="img/refresh.png"><input id="below" type="text" value="" disabled /></div>
+            <!-- <p id="p_uname" style="color: red;display:none;">Please enter your Username</p> -->
+        
+        <div class="forget_div">   
+        <button type="button" onclick="show()">Forget Password?</button> <input type="submit" class="sub_btn" id="sub_btn" value="Login" onclick="login()">  
+        </div>   
+    </div>
+
+
+
+<!-- style="display:none" -->
+    <div id="forget_password" class="forgot_password" style="display:none" data-aos="slide-right">
+        <div class="head_img_div">
+            <img src="img/Logo.png">
+        </div>
+        <div class="input_div">
+            <div class="img_div"><img src="img/logo2.png"></div>
+            <div class="span_div"><span><b>Provide your username</b> To reset password</span></div>
+        </div>
+        <div class="lab_div">
+            <div class="img_div_2_user"><img  src="img/user3.png"></div><input id="user_name2" type="text" placeholder="Username or Email"></div>
+        <div class="lab_div">
+            <div class="img_div_2"></div><img src="img/below.png"><input id="below_text2"  type="text" placeholder="Enter below text"></div>
+        <div class="lab_div">
+            <div class="img_div_2"></div><img src="img/refresh.png"><input  type="text" value="" disabled /></div>
+        
+        <div class="back_div">   
+            <button  type="button" onclick="show_again()">Back to Login </button><input type="submit" class="sub_btn" id="sub_btn" value="Send OTP" onclick="reset_password()">  
+        </div>   
+    </div>
+
+
+
+    <div class="quickPay_div">
+        <p> &#8377 <b>Quick pay</b> your fees</p><br>
+        <hr>
+        <div class="input_quick">
+            <div class="quick_img_div"><img src="img/user3.png"></div><input type="text" placeholder="Username"><div class="quick_img_div2"><img src="img/arrow.png"></div>
+        </div>
+      
+    </div>
+
+</div>
+   
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        disableMutationObserver: true,
+        duration: 1000,
+    });
+  </script>
+
+</body>
+</html>    

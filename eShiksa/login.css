@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slide_bar{
+    /* background-color: coral; */
+    display: flex;
+    position: absolute;
+    /* align-items: right; */
+    /* width: 100%; */
+}
+.slide_bar img{
+    width: 1500px;
+}
+/* --------------login--------------------- */
+.login{
+    /* align-items: right; */
+    width: 400px;
+    height: 25%;
+    background-color: aqua;
+    float: right;
+    border:2px solid rgb(117, 114, 114);
+}
+/* .head_img_div{ */
+    /* align-items: center; */
+    /* width: 200px; */
+    /* height: 300px; */
+    /* background-color: blueviolet; */
+/* } */
+.head_img_div img{
+    width: 180px;
+    padding-left: 90px;
+    align-items: center;
+}
+.input_div{
+    border-top:2px solid rgb(117, 114, 114); 
+    border-bottom:2px solid rgb(117, 114, 114); 
+    margin-top: 10px;
+    height:65px;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    /* position: absolute; */
+}
+.img_div{
+    /* background-color: chocolate; */
+    height: 60px;
+}
+.img_div img{
+    /* background-color: crimson; */
+    width:60px;
+}
+.span_div{
+    /* margin-left: 80px; */
+    padding-left: 0;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+    height: 45px;
+    /* background-color: darksalmon; */
+}
+.lab_div{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    /* background-color: brown; */
+    border:2px solid rgb(117, 114, 114);
+    /* border-color: red; */
+    border-radius: 5px;
+}
+.lab_div img{
+    /* background-color: crimson; */
+    width: 18px;
+    height: 18px;
+    margin-left:8px;
+    margin-top:5px;
+}
+.img_div_2{
+    width: 30px;
+    /* background-color: chartreuse; */
+}
+.img_div_2_user img{
+    width: 20px;
+    margin-left:30px;
+}
+.login input{
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 86.7%;
+    height: 28px;
+    /* background-color: tomato; */
+    /* border-left:2px solid rgb(117, 114, 114); */
+}
+
+
+.forget_div{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color:yellow; */
+}
+.forget_div input{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(24, 192, 175);
+    margin-left: 140px;
+    width: 120px;
+    height: 35px;
+}
+.forget_div a{
+    direction: none;
+}
+/* -----------------quick pay------------------ */
+.quickPay_div{
+    /* float: left; */
+    position: absolute;
+    margin-top: 500px;
+    margin-left:1500px ;
+    /* display: flex; */
+    width: 400px;
+    height: 150px;
+    float: right;
+    border:2px solid rgb(117, 114, 114);
+    /* background-color: yellow; */
+}
+.input_quick{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top:2px solid rgb(117, 114, 114); 
+    border-bottom:2px solid rgb(117, 114, 114);
+    border-radius: 5px; 
+    margin-top: 10px;
+    height:37px;
+    background-color: rgb(100, 223, 216);
+    display: flex;
+}
+.input_quick input{
+    /* margin-top: 15px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    display: flex;
+    /* background-color: brown; */
+    /* border:2px solid rgb(117, 114, 114); */
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 86.7%;
+    height: 35px;
+}
+.quick_img_div{
+    width: 50px;
+    align-content: center;
+   /* background-color: violet; */
+   
+}
+.quick_img_div img{
+    width: 20px;
+    height: 20px;
+    margin-left:10px;
+    margin-top:8px;
+}
+/* right side image */
+.quick_img_div2{
+    width: 50px;
+    align-content: center;
+   /* background-color: violet; */
+   
+}
+.quick_img_div2 img{
+    width: 20px;
+    height: 20px;
+    margin-left:10px;
+    margin-top:8px;
+}
+/* =============== */
+.quickPay_div p{
+    /* text-size: 30px; */
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+/*======================= forget password=========================================  */
+.forgot_password{
+    /* align-items: right; */
+    width: 400px;
+    height: 450px;
+    /* background-color: aqua; */
+    float: right;
+    border:2px solid rgb(117, 114, 114);
+}
+.forgot_password input{
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 86.7%;
+    height: 28px;
+    /* border-left:2px solid rgb(117, 114, 114); */
+}
+.back_div{
+    /* background-color: tomato; */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+.back_div input{
+        color: white;
+    border-radius: 5px;
+    background-color: rgb(24, 192, 175);
+    margin-left: 150px;
+    width: 135px;
+    height: 35px;
+}
+.back_div button{
+    direction: none;
+}
